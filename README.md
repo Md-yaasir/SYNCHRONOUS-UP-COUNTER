@@ -1,3 +1,133 @@
+Skip to content
+Navigation Menu
+Md-yaasir
+SYNCHRONOUS-UP-COUNTER
+
+Type / to search
+Code
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Editing README.md in SYNCHRONOUS-UP-COUNTER
+BreadcrumbsSYNCHRONOUS-UP-COUNTER
+/
+README.md
+in
+main
+
+Edit
+
+Preview
+Indent mode
+
+Spaces
+Indent size
+
+2
+Line wrap mode
+
+Soft wrap
+Editing README.md file contents
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
 ### SYNCHRONOUS-UP-COUNTER
 
 **AIM:**
@@ -10,7 +140,9 @@ Quartus prime
 
 **THEORY**
 
+
 **4 bit synchronous UP Counter**
+
 
 If we enable each J-K flip-flop to toggle based on whether or not all preceding flip-flop outputs (Q) are “high,” we can obtain the same counting sequence as the asynchronous circuit without the ripple effect, since each flip-flop in this circuit will be clocked at exactly the same time:
 
@@ -26,17 +158,31 @@ Since the first (LSB) flip-flop needs to toggle at every clock pulse, its J and 
 The next flip-flop need only “recognize” that the first flip-flop’s Q output is high to be made ready to toggle, so no AND gate is needed.
 However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
 
+
+
 **Procedure**
 
-/* write all the steps invloved */
+1.Initialize the shift register to a known state (e.g., all zeros).
+
+2.Input a bit serially into the shift register.
+
+3.Shift the contents of the register one position to the right (or left).
+
+4.Output the shifted bit from the last stage of the register.
+
+5.Repeat steps 2-4 for each bit you want to input and shift.
+
+
+
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
 
-Developed by:Y.MOHAMMED YAASIR
+Developed by:Mohammed Yaasir Y
+
 RegisterNumber:24900359
-*/
+
+
 ```
 module ex11(out,clk,rstn);
 input clk,rstn;
@@ -50,14 +196,35 @@ begin
 end
 endmodule
 ```
+
+
 **RTL LOGIC UP COUNTER**
-![Screenshot 2024-05-08 185528](https://github.com/23004742/SYNCHRONOUS-UP-COUNTER/assets/150319318/c23ed5f4-be84-4eb5-9651-61243085d9e4)
+
+
+![de10](https://github.com/23002776/SYNCHRONOUS-UP-COUNTER/assets/145742657/66fc43d1-92e2-44d8-aa13-34c31b4f100a)
+
 
 **TIMING DIAGRAM FOR IP COUNTER**
-![Screenshot 2024-05-08 185535](https://github.com/23004742/SYNCHRONOUS-UP-COUNTER/assets/150319318/e6138194-8bfc-43e9-8e2f-f81887807b77)
+
+
+![de11](https://github.com/23002776/SYNCHRONOUS-UP-COUNTER/assets/145742657/4e8c3b6a-4598-4ed3-b666-6ded1c19437a)
+
+
 
 **TRUTH TABLE**
-![Screenshot 2024-05-08 185545](https://github.com/23004742/SYNCHRONOUS-UP-COUNTER/assets/150319318/dd7b9cf3-4f08-4c18-8d8e-8e124a1ce4f6)
+
+
+![de12](https://github.com/23002776/SYNCHRONOUS-UP-COUNTER/assets/145742657/865fb0d4-c01e-48fa-9753-c277cc1e6f6a)
+
+
 
 **RESULTS**
+
+
+
 Hence a 4 bit synchronous up counter is implemented correctly
+
+Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
+No file chosen
+Attach files by dragging & dropping, selecting or pasting them.
+Editing SYNCHRONOUS-UP-COUNTER/README.md at main · Md-yaasir/SYNCHRONOUS-UP-COUNTER
